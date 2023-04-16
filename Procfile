@@ -1,0 +1,1 @@
+web: gunicorn horainsulina.wsgi --log-file -
