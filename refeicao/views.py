@@ -11,7 +11,7 @@ from .serializers import RefeicaoSerializer
 class RefeicaoViewSet(viewsets.ModelViewSet):
     queryset = Refeicao.objects.all()
     serializer_class = RefeicaoSerializer
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
     ordering_fields = ['nome']
     search_fields = ['nome']
