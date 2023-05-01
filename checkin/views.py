@@ -10,7 +10,7 @@ from .serializers import CheckinSerializer
 
 class CadastrarListarCheckin(generics.ListCreateAPIView):
 
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
 
     queryset = Checkin.objects.all()
     serializer_class = CheckinSerializer
@@ -18,7 +18,7 @@ class CadastrarListarCheckin(generics.ListCreateAPIView):
 
 class CheckinPorUsuarioViewSet(viewsets.ReadOnlyModelViewSet):
 
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
     
     serializer_class = CheckinSerializer
 
@@ -31,7 +31,7 @@ class CheckinPorUsuarioViewSet(viewsets.ReadOnlyModelViewSet):
 
 class RelatorioAnualView(APIView):
     
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
     
     def get(self, request, usuario_id):
         
@@ -55,7 +55,7 @@ class RelatorioAnualView(APIView):
 
 class RelatorioMensalView(APIView):
 
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
 
     def get(self, request, usuario_id):
         

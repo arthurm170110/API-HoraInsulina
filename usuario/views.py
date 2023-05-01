@@ -27,7 +27,7 @@ class CadastrarListarUsuario(APIView):
 
 class AlterarDeletarUsuario(APIView):
 
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
 
     def get_object(self, id):
         try:
